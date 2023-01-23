@@ -78,7 +78,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wan_ttl_value", "0" },
 	{ "wan_hwaddr_x", "" },
 	{ "wan_nat_x", "1" },
-	{ "wan_mtu", "1500" },
+	{ "wan_mtu", "1480" },
 	{ "wan_auth_mode", "0" },
 	{ "wan_auth_user", "" },
 	{ "wan_auth_pass", "" },
@@ -436,12 +436,12 @@ struct nvram_pair router_defaults[] = {
 	{ "ip6_wan_size", "64" },
 	{ "ip6_wan_gate", "" },
 
-	{ "ip6_dns_auto", "0" },
+	{ "ip6_dns_auto", "1" },
 	{ "ip6_dns1", "" },
 	{ "ip6_dns2", "" },
 	{ "ip6_dns3", "" },
 
-	{ "ip6_lan_auto", "0" },
+	{ "ip6_lan_auto", "1" },
 	{ "ip6_lan_addr", "" },
 	{ "ip6_lan_size", "64" },
 	{ "ip6_lan_radv", "1" },
@@ -979,7 +979,7 @@ struct nvram_pair router_defaults[] = {
 #endif
 
 	{ "telnetd", "0" },
-	{ "sshd_enable", "1" },
+	{ "sshd_enable", "0" },
 	{ "wins_enable", "0" },
 	{ "lltd_enable", "1" },
 	{ "adsc_enable", "0" },
@@ -1049,7 +1049,7 @@ struct nvram_pair router_defaults[] = {
 	{ "hw_nat_mode", "1" },
 	{ "sw_nat_mode", "0" },
 #if defined(USE_SFE)
-	{ "sfe_enable", "2" },
+	{ "sfe_enable", "0" },
 #endif
 	{ "fw_syn_cook", "0" },
 	{ "fw_mac_drop", "0" },
